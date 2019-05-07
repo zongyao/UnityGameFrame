@@ -1,0 +1,1718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{4DA556FC-D89C-0392-C2F5-E65039E00A77}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_15;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\AssetBundle\ABDemo.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\AssetBundleAssetLoader.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\AssetBundleLoader.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\AssetBundleManager.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\AssetBundleVerson.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\CheckAndDownloadAB.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\MD5Util.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\UnityWebRequestProcessor.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\WebRequest.cs" />
+     <Compile Include="Assets\Scripts\Core\MonoSingleton.cs" />
+     <Compile Include="Assets\Scripts\Core\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Managers\ResourceManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\BehaviorTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\ExternalBehaviorTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Object Drawers\FloatSliderAttribute.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Object Drawers\IntSliderAttribute.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\BehaviorTreeReference.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\Idle.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\Log.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\PerformInterruption.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\Reflection\GetFieldValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\Reflection\GetPropertyValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\Reflection\InvokeMethod.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\Reflection\SetFieldValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\Reflection\SetPropertyValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\RestartBehaviorTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\SendEvent.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\StartBehaviorTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\StopBehaviorTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Actions\Wait.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\Parallel.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\ParallelComplete.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\ParallelSelector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\PrioritySelector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\RandomSelector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\RandomSequence.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\Selector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\SelectorEvaluator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\Sequence.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Composites\UtilitySelector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\HasReceivedEvent.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredCollision.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredCollision2D.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredTrigger.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredTrigger2D.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasExitedCollision.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasExitedCollision2D.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasExitedTrigger.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasExitedTrigger2D.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\RandomProbability.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Reflection\CompareFieldValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Conditionals\Reflection\ComparePropertyValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Decorators\ConditionalEvaluator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Decorators\Interrupt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Decorators\Inverter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Decorators\Repeater.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Decorators\ReturnFailure.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Decorators\ReturnSuccess.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Decorators\TaskGuard.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Decorators\UntilFailure.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Decorators\UntilSuccess.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\EntryTask.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\Blend.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\CrossFade.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\CrossFadeQueued.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\GetAnimatePhysics.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\IsPlaying.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\Play.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\PlayQueued.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\Rewind.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\Sample.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\SetAnimatePhysics.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\SetWrapMode.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animation\Stop.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\CrossFade.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetApplyRootMotion.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetBoolParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetDeltaPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetDeltaRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetFloatParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetGravityWeight.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetIntegerParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetLayerWeight.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetSpeed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\GetStringToHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\InterruptMatchTarget.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\IsInTransition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\IsName.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\IsParameterControlledByCurve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\MatchTarget.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\Play.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\SetApplyRootMotion.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\SetBoolParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\SetFloatParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\SetIntegerParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\SetLayerWeight.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\SetLookAtPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\SetLookAtWeight.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\SetSpeed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\SetTrigger.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\StartPlayback.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\StartRecording.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\StopPlayback.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\StopRecording.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Animator\WaitForState.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetIgnoreListenerPause.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetIgnoreListenerVolume.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetLoop.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetMaxDistance.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetMinDistance.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetMute.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetPitch.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetPriority.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetSpread.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetTimeSamples.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetVolume.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\IsPlaying.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\Pause.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\Play.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\PlayDelayed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\PlayOneShot.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\PlayScheduled.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetAudioClip.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetIgnoreListenerPause.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetIgnoreListenerVolume.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetLoop.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetMaxDistance.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetMinDistance.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetMute.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPan.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPanLevel.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPitch.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPriority.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetRolloffMode.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetScheduledEndTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetScheduledStartTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetSpread.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetVelocityUpdateMode.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetVolume.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\AudioSource\Stop.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Behaviour\GetIsEnabled.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Behaviour\IsEnabled.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Behaviour\SetIsEnabled.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\GetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\GetSize.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\SetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\SetSize.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\BoxCollider2D\GetSize.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\BoxCollider2D\SetSize.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\GetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\GetDirection.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\GetHeight.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\GetRadius.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetDirection.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetHeight.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetRadius.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetHeight.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetRadius.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetSlopeLimit.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetStepOffset.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetVelocity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\HasColliderHit.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\IsGrounded.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\Move.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetHeight.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetRadius.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetSlopeLimit.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetStepOffset.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SimpleMove.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CircleCollider2D\GetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CircleCollider2D\GetRadius.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CircleCollider2D\SetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\CircleCollider2D\SetRadius.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Debug\DrawLine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Debug\DrawRay.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Debug\LogFormat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Debug\LogValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\ActiveInHierarchy.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\ActiveSelf.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\CompareLayer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\CompareTag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\Destroy.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\DestroyImmediate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\Find.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\FindGameObjectsWithTag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\FindWithTag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\GetComponent.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\GetTag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\Instantiate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\SendMessage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\SetActive.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\GameObject\SetTag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\GetAcceleration.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\GetAxis.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\GetAxisRaw.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\GetButton.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\GetKey.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\GetMouseButton.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\GetMousePosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\IsButtonDown.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\IsButtonUp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\IsKeyDown.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\IsKeyUp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\IsMouseDown.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Input\IsMouseUp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\LayerMask\GetLayer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\LayerMask\SetLayer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\GetColor.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\GetCookieSize.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\GetIntensity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\GetRange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\GetShadowBias.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\GetShadowStrength.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\GetSpotAngle.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetColor.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetCookie.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetCookieSize.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetCullingMask.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetIntensity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetRange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowBias.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadows.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowSoftness.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowSoftnessFade.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowStrength.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetSpotAngle.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Light\SetType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\BoolComparison.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\BoolFlip.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\BoolOperator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\FloatAbs.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\FloatClamp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\FloatComparison.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\FloatOperator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\IntAbs.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\IntClamp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\IntComparison.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\IntOperator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\IsFloatPositive.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\IsIntPositive.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\Lerp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\LerpAngle.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\RandomBool.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\RandomFloat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\RandomInt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\SetBool.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\SetFloat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Math\SetInt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetAcceleration.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetAngularSpeed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetDestination.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetIsStopped.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetRemainingDistance.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetSpeed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\IsStopped.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\Move.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\ResetPath.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\Resume.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetAcceleration.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetAngularSpeed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetDestination.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetIsStopped.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetSpeed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\Stop.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\Warp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Network\IsClient.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Network\IsServer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Clear.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetDuration.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetEmissionRate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetEnableEmission.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetLoop.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetMaxParticles.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetParticleCount.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetPlaybackSpeed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsAlive.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsPaused.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsPlaying.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsStopped.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Pause.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Play.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetEmissionRate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetEnableEmission.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetLoop.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetMaxParticles.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetPlaybackSpeed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartColor.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartDelay.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartLifetime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartSize.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartSpeed.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Simulate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Stop.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Physics\Linecast.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Physics\Raycast.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Physics\Spherecast.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Physics2D\Circlecast.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Physics2D\Linecast.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Physics2D\Raycast.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\DeleteAll.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\DeleteKey.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\GetFloat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\GetInt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\GetString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\HasKey.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\Save.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\SetFloat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\SetInt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\SetString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Angle.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\AngleAxis.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Dot.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Euler.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\FromToRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Identity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Inverse.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Lerp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\LookRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\RotateTowards.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Slerp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Renderer\IsVisible.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Renderer\SetMaterial.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddExplosionForce.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddForce.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddForceAtPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddRelativeForce.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddRelativeTorque.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddTorque.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetAngularDrag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetAngularVelocity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetCenterOfMass.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetDrag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetFreezeRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetIsKinematic.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetMass.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetUseGravity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetVelocity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\IsKinematic.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\IsSleeping.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\MovePosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\MoveRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetAngularDrag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetAngularVelocity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetCenterOfMass.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetConstraints.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetDrag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetFreezeRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetIsKinematic.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetMass.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetUseGravity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetVelocity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\Sleep.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\UseGravity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\WakeUp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\AddForce.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\AddForceAtPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\AddTorque.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetAngularDrag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetAngularVelocity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetDrag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetGravtyScale.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetIsKinematic.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetMass.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetVelocity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\IsKinematic.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\IsSleeping.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\MovePosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\MoveRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetAngularDrag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetAngularVelocity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetDrag.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetGravityScale.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetIsKinematic.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetMass.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetVelocity.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\Sleep.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\WakeUp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedBool.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedColor.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedFloat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedGameObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedGameObjectList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedInt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedObjectList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedQuaternion.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedRect.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedTransform.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedTransformList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedVector2.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedVector3.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedVector4.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedBool.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedColor.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedFloat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedGameObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedGameObjectList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedInt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedObjectList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedQuaternion.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedRect.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedTransform.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedTransformList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedVector2.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedVector3.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedVector4.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SharedGameObjectsToGameObjectList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SharedGameObjectToTransform.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SharedTransformsToTransformList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SharedTransformToGameObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SphereCollider\GetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SphereCollider\GetRadius.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SphereCollider\SetCenter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\SphereCollider\SetRadius.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\String\BuildString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\String\CompareTo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\String\Format.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\String\GetLength.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\String\GetRandomString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\String\GetSubstring.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\String\IsNullOrEmpty.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\String\Replace.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\String\SetString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Time\GetDeltaTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Time\GetRealtimeSinceStartup.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Time\GetTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Time\GetTimeScale.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Time\SetTimeScale.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Timeline\IsPaused.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Timeline\IsPlaying.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Timeline\Pause.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Timeline\Play.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Timeline\Resume.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Timeline\Stop.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\Find.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetAngleToTarget.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetChild.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetChildCount.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetEulerAngles.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetForwardVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalEulerAngles.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalScale.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetParent.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetRightVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\GetUpVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\IsChildOf.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\LookAt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\Rotate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\RotateAround.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetEulerAngles.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetForwardVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetLocalEulerAngles.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetLocalPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetLocalRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetLocalScale.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetParent.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetPosition.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetRightVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetRotation.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\SetUpVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Transform\Translate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\ClampMagnitude.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\Distance.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\Dot.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetMagnitude.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetRightVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetSqrMagnitude.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetUpVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetVector3.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetXY.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\Lerp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\MoveTowards.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\Multiply.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\Normalize.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\Operator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\SetValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector2\SetXY.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\Angle.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\ClampMagnitude.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\Distance.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\Dot.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetForwardVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetMagnitude.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetRightVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetSqrMagnitude.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetUpVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetVector2.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetXYZ.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\Lerp.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\MoveTowards.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\Multiply.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\Normalize.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\Operator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\RotateTowards.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\SetValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Tasks\Unity\Vector3\SetXYZ.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedAnimationCurve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedBool.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedColor.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedFloat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedGameObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedGameObjectList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedInt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedMaterial.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedObjectList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedQuaternion.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedRect.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedTransform.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedTransformList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedVector2.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedVector2Int.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedVector3.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedVector3Int.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Behavior Designer\Runtime\Variables\SharedVector4.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Authentication\Credentials.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Authentication\Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Authentication\DigestStore.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Caching\HTTPCacheFileInfo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Caching\HTTPCacheFileLock.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Caching\HTTPCacheMaintananceParams.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Caching\HTTPCacheService.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Connections\ConnectionBase.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Connections\FileConnection.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Connections\WebGLConnection.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Cookies\Cookie.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Cookies\CookieJar.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\CRC32.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\Deflate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\DeflateStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\GZipStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\Inflate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\InfTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\Zlib.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\ZlibBaseStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\ZlibCodec.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\ZlibConstants.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Decompression\ZTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Extensions\Extensions.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Extensions\HeaderParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Extensions\HeaderValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Extensions\HeartbeatManager.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Extensions\KeyValuePairList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Extensions\WWWAuthenticateHeaderParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Forms\HTTPFieldData.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Forms\HTTPFormBase.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Forms\HTTPFormUsage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Forms\Implementations\HTTPMultiPartForm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Forms\Implementations\HTTPUrlEncodedForm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Forms\Implementations\RawJSonForm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Forms\Implementations\UnityForm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPConnection.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPConnectionStates.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPManager.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPMethods.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPProtocolFactory.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPProxy.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPRange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPRequest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPResponse.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\HTTPUpdateDelegator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\JSON\JSON.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Logger\DefaultLogger.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Logger\ILogger.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\Collections\ObjectModel\ObservableDictionary.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\Collections\Specialized\NotifyCollectionChangedEventArgs.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\Cryptography\MD5CryptoServiceProvider.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\IO\Directory.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\IO\File.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\IO\FileEnums.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\IO\FileHelper.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\IO\FileStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\IO\Infos.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\TcpClient\TcpClient.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\TcpClient\WinRT\DataReaderWriterStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\PlatformSupport\TcpClient\WinRT\TcpClient.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\anssi\ANSSINamedCurves.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\anssi\ANSSIObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1Encodable.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1EncodableVector.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1Exception.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ASN1Generator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1InputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1Null.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1Object.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1OctetString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ASN1OctetStringParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1OutputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1ParsingException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1Sequence.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ASN1SequenceParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1Set.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ASN1SetParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ASN1StreamParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1TaggedObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ASN1TaggedObjectParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\Asn1Tags.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BerApplicationSpecific.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BerApplicationSpecificParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BERBitString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BERGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BerOctetString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BEROctetStringParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BerOutputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BerSequence.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BERSequenceGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BERSequenceParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BerSet.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BERSetGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BERSetParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BerTaggedObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\BERTaggedObjectParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ConstructedOctetStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\cryptopro\CryptoProObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\cryptopro\ECGOST3410NamedCurves.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\cryptopro\GOST3410NamedParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\cryptopro\GOST3410ParamSetParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\cryptopro\GOST3410PublicKeyAlgParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DefiniteLengthInputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerApplicationSpecific.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerBitString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerBMPString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerBoolean.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerEnumerated.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DERExternal.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DERExternalParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerGeneralizedTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerGeneralString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DERGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerGraphicString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerIA5String.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerInteger.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerNull.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerNumericString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerObjectIdentifier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerOctetString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DEROctetStringParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerOutputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerPrintableString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerSequence.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DERSequenceParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerSet.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DERSetGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DERSetParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerStringBase.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerT61String.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerTaggedObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerUniversalString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerUTCTime.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerUTF8String.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerVideotexString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\DerVisibleString.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\iana\IANAObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\IAsn1ApplicationSpecificParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\IAsn1Choice.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\IAsn1Convertible.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\IAsn1String.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\IndefiniteLengthInputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\LazyASN1InputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\LazyDERSequence.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\LazyDERSet.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\LimitedInputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\misc\MiscObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\misc\NetscapeCertType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\misc\NetscapeRevocationURL.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\misc\VerisignCzagExtension.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\nist\NISTNamedCurves.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\nist\NISTObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ocsp\OCSPResponse.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ocsp\OCSPResponseStatus.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ocsp\ResponderID.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\ocsp\ResponseBytes.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\OidTokenizer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\oiw\ElGamalParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\oiw\OIWObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\pkcs\ContentInfo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\pkcs\DHParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\pkcs\PKCSObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\pkcs\RSASSAPSSparams.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\pkcs\SignedData.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\sec\SECNamedCurves.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\sec\SECObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\teletrust\TeleTrusTNamedCurves.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\teletrust\TeleTrusTObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\util\Asn1Dump.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\util\FilterStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\AlgorithmIdentifier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\BasicConstraints.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\CertificateList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\CRLDistPoint.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\CRLNumber.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\CRLReason.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\DigestInfo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\DistributionPoint.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\DistributionPointName.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\DSAParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\GeneralName.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\GeneralNames.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\IssuingDistributionPoint.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\KeyUsage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\ReasonFlags.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\RSAPublicKeyStructure.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\SubjectPublicKeyInfo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\TBSCertificateStructure.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\TBSCertList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\Time.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\X509CertificateStructure.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\X509DefaultEntryConverter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\X509Extension.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\X509Extensions.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\X509Name.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\X509NameEntryConverter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\X509NameTokenizer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x509\X509ObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\DHDomainParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\DHPublicKey.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\DHValidationParms.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\ECNamedCurveTable.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X962NamedCurves.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X962Parameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X9Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X9ECParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X9ECParametersHolder.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X9ECPoint.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X9FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X9FieldID.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X9IntegerConverter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\asn1\x9\X9ObjectIdentifiers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\agreement\DHBasicAgreement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\agreement\ECDHBasicAgreement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\AsymmetricCipherKeyPair.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\AsymmetricKeyParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\BufferedAeadBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\BufferedAsymmetricBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\BufferedBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\BufferedCipherBase.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\BufferedIesCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\BufferedStreamCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\Check.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\CipherKeyGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\CryptoException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\DataLengthException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\GeneralDigest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\GOST3411Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\KeccakDigest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\LongDigest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\MD2Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\MD4Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\MD5Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\NullDigest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\RipeMD128Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\RipeMD160Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\RipeMD256Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\RipeMD320Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\Sha1Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\Sha224Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\Sha256Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\Sha384Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\SHA3Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\Sha512Digest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\Sha512tDigest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\ShakeDigest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\TigerDigest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\digests\WhirlpoolDigest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\ec\CustomNamedCurves.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\encodings\ISO9796d1Encoding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\encodings\OaepEncoding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\encodings\Pkcs1Encoding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\AesEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\AesFastEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\AesWrapEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\BlowfishEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\CamelliaEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\CamelliaWrapEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\Cast5Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\Cast6Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\ChaCha7539Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\ChaChaEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\DesEdeEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\DesEdeWrapEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\DesEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\ElGamalEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\GOST28147Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\HC128Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\HC256Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\IdeaEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\IesEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\NoekeonEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RC2Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RC2WrapEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RC4Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RC532Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RC564Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RC6Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RFC3211WrapEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RFC3394WrapEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RijndaelEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RSABlindedEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\RSACoreEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\Salsa20Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\SEEDEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\SEEDWrapEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\SerpentEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\SerpentEngineBase.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\SkipjackEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\TEAEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\TwofishEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\VMPCEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\VMPCKSA3Engine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\engines\XTEAEngine.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\generators\DHBasicKeyPairGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\generators\DHKeyGeneratorHelper.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\generators\DHKeyPairGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\generators\DHParametersHelper.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\generators\DsaKeyPairGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\generators\ECKeyPairGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\generators\ElGamalKeyPairGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\generators\Poly1305KeyGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\generators\RsaKeyPairGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IAsymmetricBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IAsymmetricCipherKeyPairGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IBasicAgreement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IBlockResult.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IBufferedCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\ICipherParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IDerivationFunction.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IDerivationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IDigest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IDSA.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IMac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\InvalidCipherTextException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\ISignatureFactory.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\ISigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\ISignerWithRecovery.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IStreamCalculator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IStreamCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IVerifier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IVerifierFactory.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IVerifierFactoryProvider.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IWrapper.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\IXof.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\KeyGenerationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\macs\CbcBlockCipherMac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\macs\CfbBlockCipherMac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\macs\CMac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\macs\GOST28147Mac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\macs\HMac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\macs\ISO9797Alg3Mac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\macs\Poly1305.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\macs\SipHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\macs\VMPCMac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\MaxBytesExceededException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\CbcBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\CcmBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\CfbBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\CtsBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\EAXBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\gcm\GcmUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\gcm\IGcmExponentiator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\gcm\IGcmMultiplier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\gcm\Tables1kGcmExponentiator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\gcm\Tables8kGcmMultiplier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\GCMBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\GOFBBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\IAeadBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\OCBBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\OfbBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\OpenPgpCfbBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\modes\SicBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\operators\Asn1Signature.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\OutputLengthException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\paddings\BlockCipherPadding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\paddings\ISO10126d2Padding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\paddings\ISO7816d4Padding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\paddings\PaddedBufferedBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\paddings\Pkcs7Padding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\paddings\TbcPadding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\paddings\X923Padding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\paddings\ZeroBytePadding.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\AEADParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DesEdeParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DesParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DHKeyGenerationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DHKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DHParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DHPrivateKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DHPublicKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DHValidationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DsaKeyGenerationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DsaKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DsaParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DsaPrivateKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DsaPublicKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\DsaValidationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ECDomainParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ECKeyGenerationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ECKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ECPrivateKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ECPublicKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ElGamalKeyGenerationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ElGamalKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ElGamalParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ElGamalPrivateKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ElGamalPublicKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\GOST3410KeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\GOST3410Parameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\GOST3410PrivateKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\GOST3410PublicKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\GOST3410ValidationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\IesParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\IesWithCipherParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ISO18033KDFParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\KdfParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\KeyParameter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\MqvPrivateParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\MqvPublicParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ParametersWithIV.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ParametersWithRandom.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ParametersWithSalt.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\ParametersWithSBox.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\RC2Parameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\RC5Parameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\RSABlindingParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\RsaKeyGenerationParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\RsaKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\parameters\RsaPrivateCrtKeyParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\PbeParametersGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\prng\CryptoApiRandomGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\prng\DigestRandomGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\prng\IRandomGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\DsaDigestSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\DsaSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\ECDsaSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\ECGOST3410Signer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\ECNRSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\GenericSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\GOST3410DigestSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\GOST3410Signer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\HMacDsaKCalculator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\IDsaKCalculator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\Iso9796d2Signer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\IsoTrailers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\PssSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\RandomDsaKCalculator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\RsaDigestSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\signers\X931Signer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsAgreementCredentials.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsCipherFactory.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsClient.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsContext.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsCredentials.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsEncryptionCredentials.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsKeyExchange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsPeer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsServer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsSignerCredentials.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AlertDescription.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AlertLevel.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\AlwaysValidVerifyer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ByteQueue.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ByteQueueStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\CertChainType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\Certificate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\CertificateRequest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\CertificateStatus.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\CertificateStatusRequest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\CertificateStatusType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\Chacha20Poly1305.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ChangeCipherSpec.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\CipherSuite.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\CipherType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ClientCertificateType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\CombinedHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\CompressionMethod.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ConnectionEnd.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ContentType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\DatagramTransport.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\DefaultTlsCipherFactory.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\DefaultTlsClient.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\DeferredHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\DigestInputBuffer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\DigitallySigned.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ECBasisType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ECCurveType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ECPointFormat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\EncryptionAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ExporterLabel.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ExtensionType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\FiniteFieldDheGroup.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\HandshakeType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\HashAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\HeartbeatExtension.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\HeartbeatMessageType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\HeartbeatMode.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ICertificateVerifyer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\KeyExchangeAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\LegacyTlsAuthentication.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\LegacyTlsClient.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\MacAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\MaxFragmentLength.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\NamedCurve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\NameType.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\NewSessionTicket.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\OcspStatusRequest.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\PrfAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ProtocolVersion.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\RecordStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\SecurityParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ServerDHParams.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ServerName.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\ServerNameList.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\SessionParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\SignatureAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\SignatureAndHashAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\SignerInputBuffer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\Ssl3Mac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\SupplementalDataEntry.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsAeadCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsAgreementCredentials.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsAuthentication.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsBlockCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsCipherFactory.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsClient.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsClientContext.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsClientContextImpl.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsClientProtocol.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsCompression.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsContext.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsCredentials.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsDeflateCompression.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsDheKeyExchange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsDHKeyExchange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsDHUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsDsaSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsDssSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsEccUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsECDheKeyExchange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsECDHKeyExchange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsECDsaSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsEncryptionCredentials.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsExtensionsUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsFatalAlert.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsHandshakeHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsKeyExchange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsMac.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsNullCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsNullCompression.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsPeer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsProtocol.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsRsaKeyExchange.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsRsaSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsRsaUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsServer.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsServerContext.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsServerContextImpl.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsSession.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsSessionImpl.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsSigner.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsSignerCredentials.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsStreamCipher.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\tls\TlsUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\crypto\util\Pack.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\BigInteger.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\abc\SimpleBigDecimal.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\abc\Tnaf.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\abc\ZTauElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224K1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224K1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224R1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224R1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256K1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256K1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256R1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256R1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113R2Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113R2Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R2Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R2Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R2Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R2Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193R2Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193R2Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT239Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT239FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT239K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT239K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571Field.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571FieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571K1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571K1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571R1Curve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571R1Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\ECAlgorithms.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\ECCurve.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\ECFieldElement.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\ECPoint.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\ECPointMap.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\endo\ECEndomorphism.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\endo\GlvEndomorphism.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\endo\GlvTypeBEndomorphism.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\endo\GlvTypeBParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\LongArray.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\AbstractECMultiplier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\ECMultiplier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\FixedPointCombMultiplier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\FixedPointPreCompInfo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\FixedPointUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\GlvMultiplier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\PreCompInfo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\WNafL2RMultiplier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\WNafPreCompInfo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\WNafUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\WTauNafMultiplier.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\multiplier\WTauNafPreCompInfo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\ec\ScaleXPointMap.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\field\FiniteFields.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\field\GenericPolynomialExtensionField.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\field\GF2Polynomial.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\field\IExtensionField.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\field\IFiniteField.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\field\IPolynomial.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\field\IPolynomialExtensionField.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\field\PrimeField.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Interleave.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Mod.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat128.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat160.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat192.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat224.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat256.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat320.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat384.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat448.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat512.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\math\raw\Nat576.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\ReflectionHelpers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\cert\CertificateEncodingException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\cert\CertificateException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\cert\CertificateExpiredException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\cert\CertificateNotYetValidException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\cert\CertificateParsingException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\cert\CrlException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\DigestUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\GeneralSecurityException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\InvalidKeyException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\InvalidParameterException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\KeyException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\MacUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\PublicKeyFactory.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\SecureRandom.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\SecurityUtilityException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\SignatureException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\security\SignerUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\Arrays.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\BigIntegers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\collections\CollectionUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\collections\EmptyEnumerable.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\collections\EnumerableProxy.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\collections\HashSet.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\collections\ISet.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\date\DateTimeObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\date\DateTimeUtilities.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\encoders\Base64.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\encoders\Base64Encoder.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\encoders\Hex.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\encoders\HexEncoder.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\encoders\IEncoder.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\Enums.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\IMemoable.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\Integers.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\BaseInputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\BaseOutputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\FilterStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\pem\PemGenerationException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\pem\PemHeader.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\pem\PemObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\pem\PemObjectGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\pem\PemReader.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\pem\PemWriter.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\PushbackStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\StreamOverflowException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\Streams.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\TeeInputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\io\TeeOutputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\MemoableResetException.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\net\IPAddress.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\Platform.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\Strings.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\Times.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\Adler32.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\Deflate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\InfBlocks.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\InfCodes.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\Inflate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\InfTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\JZlib.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\StaticTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\ZOutputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\ZStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\util\zlib\ZTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\extension\X509ExtensionUtil.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\IX509Extension.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\PEMParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\X509Certificate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\X509CertificateParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\X509Crl.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\X509CrlEntry.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\X509CrlParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\X509ExtensionBase.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\x509\X509SignatureUtil.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\ServerSentEvents\EventSource.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\ServerSentEvents\EventSourceResponse.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\ServerSentEvents\Message.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Authentication\IAuthenticationProvider.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Connection.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Enums.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Hubs\Hub.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Hubs\IHub.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\JsonEncoders\DefaultJsonEncoder.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\JsonEncoders\IJsonEncoder.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Messages\ClientMessage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Messages\IServerMessage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Messages\ServerMessages.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\NegotiationData.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Transports\PollingTransport.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Transports\PostSendTransportBase.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Transports\ServerSentEventsTransport.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Transports\TransportBase.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SignalR\Transports\WebSocketTransport.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Enums.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Error.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Events\EventDescriptor.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Events\EventNames.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Events\EventTable.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\HandshakeData.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Interfaces.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\JsonEncoders\DefaultJSonEncoder.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\JsonEncoders\IJSonEncoder.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Packet.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Socket.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\SocketManager.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\SocketOptions.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Transports\ITransport.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Transports\PollingTransport.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SocketIO\Transports\WebSocketTransport.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\Statistics\Statistics.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\WebSocket\Extensions\IExtension.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\WebSocket\Extensions\PerMessageCompression.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\WebSocket\Frames\WebSocketFrame.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\WebSocket\Frames\WebSocketFrameReader.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\WebSocket\Frames\WebSocketFrameTypes.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\WebSocket\WebSocket.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\WebSocket\WebSocketResponse.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\WebSocket\WebSocketStatusCodes.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\DOTween\Modules\DOTweenModuleSprite.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\DOTween\Modules\DOTweenModuleUtils.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\TexturePackerTool\UGUIExtension\Atlas.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\TexturePackerTool\UGUIExtension\AtlasImage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\TexturePackerTool\UGUIExtension\PolygonAtlasImage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\TexturePackerTool\UGUIExtension\PolygonRawImage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\TexturePackerTool\UGUIExtension\RoundCornerAtlasImage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\TexturePackerTool\UGUIExtension\RoundCornerRawImage.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\Adler32.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\AssemblyInfo.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\Deflate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\InfBlocks.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\InfCodes.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\Inflate.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\InfTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\StaticTree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\SupportClass.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\Tree.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\ZInputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\Zlib.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\ZOutputStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\ZStream.cs" />
+     <Compile Include="Assets\Scripts\ThirdPart\zlib\ZStreamException.cs" />
+     <None Include="Assets\Scripts\ThirdPart\Best HTTP\BestHTTP\SecureProtocol\License.txt" />
+     <None Include="Assets\Scripts\ThirdPart\DOTween\readme.txt" />
+ <Reference Include="UnityEditor.StandardEvents">
+ <HintPath>/Users/tugame/Desktop/UnityGameFrame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>/Users/tugame/Desktop/UnityGameFrame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>/Users/tugame/Desktop/UnityGameFrame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>/Users/tugame/Desktop/UnityGameFrame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CloudWebServicesModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FacebookModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FileSystemHttpModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticlesLegacyModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTrackingModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>/Users/tugame/Desktop/UnityGameFrame/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Users/tugame/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>/Users/tugame/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>/Users/tugame/Desktop/UnityGameFrame/Assets/Scripts/ThirdPart/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="BehaviorDesigner.Runtime">
+ <HintPath>/Users/tugame/Desktop/UnityGameFrame/Assets/Scripts/ThirdPart/Behavior Designer/Runtime/BehaviorDesigner.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/tugame/Desktop/UnityGameFrame/Assets/Scripts/ThirdPart/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>/Applications/Unity 2018.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.AssetBundleBrowser.Editor.csproj">
+      <Project>{C806776B-B914-6038-9247-C3DACA236895}</Project>      <Name>Unity.AssetBundleBrowser.Editor</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
